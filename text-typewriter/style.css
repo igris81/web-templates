@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.typewriter{
+    display: flex;
+    justify-content: center;  /* Disable to start from left */
+}
+
+.typewriter p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-inline: auto; /* Disable to start from left */
+    overflow: hidden;
+    /* Keeps on a single line */
+    white-space: nowrap;
+    /* Cursor */
+    border-right: 1px solid;
+    /* Steps = number of characters */
+    animation: typing 3s steps(22) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
